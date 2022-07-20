@@ -78,6 +78,18 @@ html {
   opacity: 0.9;
 }
 
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .person-name {
   font-size: 4rem;
   color: #fff;
@@ -165,6 +177,7 @@ html {
   align-items: center;
 }
 .about {
+  position: relative;
   width: 120rem;
   float: right;
   font-size: 2rem;
@@ -173,6 +186,16 @@ html {
   line-height: 3rem;
   margin: 5rem;
   background-color: #f4f4f4f4;
+}
+.rounded {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  left: 75em;
+  border: 0.5rem dotted black;
+  border-radius: 50%;
+  box-shadow: inset 2em 2em 2em 2em #4befe6;
+  /* background-color: #4befe6; */
 }
 .pro-skills {
   margin: 4rem;
